@@ -16,7 +16,6 @@ public class AppDbContext : DbContext {
     }
 
     //Tabelas
-    public DbSet<Tarefa> Tarefas => Set<Tarefa>();
     public DbSet<Aluno> Alunos => Set<Aluno>();
 
 }

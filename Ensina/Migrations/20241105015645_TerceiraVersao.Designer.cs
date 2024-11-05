@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Ensina.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241105004954_NovaMigracaoInicial")]
-    partial class NovaMigracaoInicial
+    [Migration("20241105015645_TerceiraVersao")]
+    partial class TerceiraVersao
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -55,23 +55,6 @@ namespace Ensina.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Alunos");
-                });
-
-            modelBuilder.Entity("Tarefa", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<bool>("Concluida")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<string>("Descricao")
-                        .HasColumnType("longtext");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Tarefas");
                 });
 #pragma warning restore 612, 618
         }

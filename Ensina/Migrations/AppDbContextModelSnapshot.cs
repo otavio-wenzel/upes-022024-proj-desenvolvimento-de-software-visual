@@ -53,23 +53,6 @@ namespace Ensina.Migrations
 
                     b.ToTable("Alunos");
                 });
-
-            modelBuilder.Entity("Tarefa", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<bool>("Concluida")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<string>("Descricao")
-                        .HasColumnType("longtext");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Tarefas");
-                });
 #pragma warning restore 612, 618
         }
     }
