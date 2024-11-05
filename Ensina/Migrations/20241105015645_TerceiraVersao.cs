@@ -7,7 +7,7 @@ using MySql.EntityFrameworkCore.Metadata;
 namespace Ensina.Migrations
 {
     /// <inheritdoc />
-    public partial class NovaMigracaoInicial : Migration
+    public partial class TerceiraVersao : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -34,21 +34,6 @@ namespace Ensina.Migrations
                     table.PrimaryKey("PK_Alunos", x => x.Id);
                 })
                 .Annotation("MySQL:Charset", "utf8mb4");
-
-            migrationBuilder.CreateTable(
-                name: "Tarefas",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    Descricao = table.Column<string>(type: "longtext", nullable: true),
-                    Concluida = table.Column<bool>(type: "tinyint(1)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Tarefas", x => x.Id);
-                })
-                .Annotation("MySQL:Charset", "utf8mb4");
         }
 
         /// <inheritdoc />
@@ -56,9 +41,6 @@ namespace Ensina.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Alunos");
-
-            migrationBuilder.DropTable(
-                name: "Tarefas");
         }
     }
 }
