@@ -14,6 +14,7 @@ public class Aluno
     public string Rg { get; set; } = string.Empty;
 
     [Required(ErrorMessage = "Telefone é obrigatório")]
+    [RegularExpression(@"^\d{11}$", ErrorMessage = "O telefone deve conter apenas dígitos e ter 11 números")]
     public string Telefone { get; set; } = string.Empty;
 
     [Required(ErrorMessage = "Email é obrigatório")]
