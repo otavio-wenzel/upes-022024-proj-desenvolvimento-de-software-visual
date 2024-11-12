@@ -28,10 +28,10 @@ public static class AlunoApi
             aluno.Nome = alunoAtualizado.Nome;
             aluno.DataDeNascimento = alunoAtualizado.DataDeNascimento;
             aluno.Rg = alunoAtualizado.Rg;
-            aluno.Telefone = alunoAtualizado.Telefone;
-            aluno.Email = alunoAtualizado.Email;
-            aluno.NomeDoTutor = alunoAtualizado.NomeDoTutor;
-            aluno.RgDoTutor = alunoAtualizado.RgDoTutor;
+            //aluno.Telefone = alunoAtualizado.Telefone;
+            //aluno.Email = alunoAtualizado.Email;
+            //aluno.NomeDoTutor = alunoAtualizado.NomeDoTutor;
+            //aluno.RgDoTutor = alunoAtualizado.RgDoTutor;
 
             await db.SaveChangesAsync();
 

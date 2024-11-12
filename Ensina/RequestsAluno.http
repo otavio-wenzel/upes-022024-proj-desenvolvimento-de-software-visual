@@ -14,11 +14,11 @@ Content-Type: application/json
 {
     "nome": "pipiu",
     "dataDeNascimento": "2005-06-15",
-    "rg": "123456789",
-    "telefone": "11987654321",
-    "email": "maria.silva@example.com",
-    "nomeDoTutor": "João Silva",
-    "rgDoTutor": "987654321"
+    "rg": "123456789"
+    //"telefone": "11987654321",
+    //"email": "maria.silva@update.com",
+    //"nomeDoTutor": "João Silva",
+    //"rgDoTutor": "987654321"
 }
 
 
@@ -29,11 +29,11 @@ Content-Type: application/json
 {
     "nome": "eliote",
     "dataDeNascimento": "2005-06-15",
-    "rg": "123456789",
-    "telefone": "11987654321",
-    "email": "maria.silva@update.com",
-    "nomeDoTutor": "João Silva",
-    "rgDoTutor": "987654321"
+    "rg": "123456789"
+    //"telefone": "11987654321",
+    //"email": "maria.silva@update.com",
+    //"nomeDoTutor": "João Silva",
+    //"rgDoTutor": "987654321"
 }
 
 ### DELETE /tarefas/{id}

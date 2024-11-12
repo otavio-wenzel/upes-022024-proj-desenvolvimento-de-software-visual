@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Ensina.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241105015645_TerceiraVersao")]
-    partial class TerceiraVersao
+    [Migration("20241112034307_QuartaVersao")]
+    partial class QuartaVersao
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,25 +30,10 @@ namespace Ensina.Migrations
                     b.Property<DateTime?>("DataDeNascimento")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Nome")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("NomeDoTutor")
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Rg")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("RgDoTutor")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Telefone")
                         .IsRequired()
                         .HasColumnType("longtext");
 
