@@ -16,7 +16,7 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 
-app.MapGet("/", () => "Planner API");
+app.MapGet("/", () => "Tá rodando paiê!");
 
 app.ConfigureAlunoApi();
 
