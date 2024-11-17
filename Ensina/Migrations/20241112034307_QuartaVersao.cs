@@ -7,7 +7,7 @@ using MySql.EntityFrameworkCore.Metadata;
 namespace Ensina.Migrations
 {
     /// <inheritdoc />
-    public partial class TerceiraVersao : Migration
+    public partial class QuartaVersao : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -23,11 +23,7 @@ namespace Ensina.Migrations
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Nome = table.Column<string>(type: "longtext", nullable: true),
                     DataDeNascimento = table.Column<DateTime>(type: "datetime(6)", nullable: true),
-                    Rg = table.Column<string>(type: "longtext", nullable: false),
-                    Telefone = table.Column<string>(type: "longtext", nullable: false),
-                    Email = table.Column<string>(type: "longtext", nullable: false),
-                    NomeDoTutor = table.Column<string>(type: "longtext", nullable: true),
-                    RgDoTutor = table.Column<string>(type: "longtext", nullable: false)
+                    Rg = table.Column<string>(type: "longtext", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -27,25 +27,10 @@ namespace Ensina.Migrations
                     b.Property<DateTime?>("DataDeNascimento")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Nome")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("NomeDoTutor")
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Rg")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("RgDoTutor")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Telefone")
                         .IsRequired()
                         .HasColumnType("longtext");
 

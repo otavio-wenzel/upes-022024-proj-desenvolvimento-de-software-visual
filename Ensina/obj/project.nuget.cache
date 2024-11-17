@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iR26+5u+GX7/9aLj10pJWdzRTZmltMWciJ/NRjlHoQ1SsDPSyr7T8Q3xuZGftNpTKz3Wndu87s2t1DECqxxkeQ==",
+  "dgSpecHash": "qyahPzPQBqCvcVmXz20MYuGMiP3OHCEqVzQ+u1XUDlzkwcogtNaMgtHTwNTfDDMKR1gCiDTrSS22nJhbUkwTug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\otavi\\Documents\\desenvolvimento-de-web-visual\\ambiente-do-projeto\\upes-022024-proj-desenvolvimento-de-software-visual\\Ensina\\Ensina.csproj",
+  "projectFilePath": "C:\\Users\\otavi\\Documents\\dev\\upes-022024-proj-desenvolvimento-de-software-visual\\Ensina\\Ensina.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\otavi\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\otavi\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
