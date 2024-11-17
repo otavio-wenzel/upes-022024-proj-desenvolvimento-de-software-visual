@@ -1,0 +1,40 @@
+
+### GET /alunos
+GET http://localhost:5120/alunos
+Accept: application/json
+
+### GET /alunos/{id}
+GET http://localhost:5120/alunos/2
+Accept: application/json
+
+### POST /alunos
+POST http://localhost:5120/alunos
+Content-Type: application/json
+
+{
+    "nome": "hermanoteu",
+    "dataDeNascimento": "2024-11-16",
+    "rg": "987654321"
+    //"telefone": "11987654321",
+    //"email": "maria.silva@update.com",
+    //"nomeDoTutor": "João Silva",
+    //"rgDoTutor": "987654321"
+}
+
+
+### PUT /tarefas
+PUT http://localhost:5120/alunos/1
+Content-Type: application/json
+
+{
+    "nome": "eliote",
+    "dataDeNascimento": "2005-06-15",
+    "rg": "123456789"
+    //"telefone": "11987654321",
+    //"email": "maria.silva@update.com",
+    //"nomeDoTutor": "João Silva",
+    //"rgDoTutor": "987654321"
+}
+
+### DELETE /tarefas/{id}
+DELETE http://localhost:5120/alunos/1
